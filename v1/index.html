@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entire EV Scooty Showroom</title>
+  <style>
+    /* Reset and basic styles */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; background-color: #E8F8F5; color: #1B2631; }
+    html { scroll-behavior: smooth; }
+
+    /* Header */
+    header {
+      background: #145A32; /* Dark green */
+      color: white;
+      padding: 20px 10px;
+      text-align: center;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    header img.logo { height: 60px; }
+    header h1 { font-size: 2rem; color: #A9DFBF; }
+    nav { width: 100%; text-align: center; margin-top: 10px; }
+    nav a {
+      color: #A9DFBF;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #2ECC71; text-decoration: underline; }
+
+    /* Sections */
+    section { padding: 40px 20px; text-align: center; }
+    h2 { color: #145A32; margin-bottom: 20px; }
+
+    /* Gallery */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery figure {
+      margin: 0;
+      text-align: center;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 8px;
+      border: 2px solid #2ECC71;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #2ECC71;
+    }
+    .gallery figcaption {
+      margin-top: 5px;
+      font-size: 0.9rem;
+      color: #145A32;
+    }
+
+    /* Contact */
+    .contact p { margin: 10px 0; font-size: 1.1rem; }
+
+    /* Footer */
+    footer {
+      background: #145A32;
+      color: #A9DFBF;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      header { flex-direction: column; }
+      .gallery img { width: 80%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/evlogo.jpg" alt="Entire EV Logo" class="logo">
+  <h1>Entire EV</h1>
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="gallery">
+  <h2>Our Showroom</h2>
+  <div class="gallery">
+    <figure>
+      <img src="images/img1.jpeg" alt="Front view of Entire EV showroom interior">
+      <figcaption>Showroom Interior View</figcaption>
+    </figure>
+    <figure>
+      <img src="images/img2.jpeg" alt="Display of electric scooters">
+      <figcaption>Electric Scooter Display</figcaption>
+    </figure>
+   
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <p>Entire EV, Gangarampur, West Bengal, 733124</p>
+    <p>Phone: +91 83888 15221</p>
+    <p>Email: mukeshagarwal897@gmail.com</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d505.67300989223946!2d88.53349924973931!3d25.403892039430144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fb470f8573d4b9%3A0x5e7e8794a37b3db5!2sUma%20Auto%20Industries%20Private%20Limited!5e0!3m2!1sen!2sin!4v1766576198042!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Entire EV. All Rights Reserved.
+</footer>
+
+</body>
+</html>
